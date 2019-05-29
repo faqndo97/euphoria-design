@@ -11,6 +11,10 @@ class PostDashboard < Administrate::BaseDashboard
       collection: Post.states.keys,
       searchable: true
     ),
+    categories: Field::HasMany.with_options(
+      limit: 5,
+      direction: :desc
+    ),
     created_at: Field::DateTime,
     updated_at: Field::DateTime
   }.freeze
@@ -27,6 +31,7 @@ class PostDashboard < Administrate::BaseDashboard
     title
     state
     body
+    categories
     created_at
     updated_at
   ].freeze
@@ -35,6 +40,7 @@ class PostDashboard < Administrate::BaseDashboard
     title
     state
     body
+    categories
   ].freeze
 
   def display_resource(post)
