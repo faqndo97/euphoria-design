@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# rubocop:disable Style/Documentation
 class AddStateToPost < ActiveRecord::Migration[6.0]
   def up
     add_column :posts, :state, :integer
@@ -7,3 +10,4 @@ class AddStateToPost < ActiveRecord::Migration[6.0]
     remove_column :posts, :state
   end
 end
+# rubocop:enable Style/Documentation

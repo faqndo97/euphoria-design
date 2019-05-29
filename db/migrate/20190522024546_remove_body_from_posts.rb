@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# rubocop:disable Style/Documentation
 class RemoveBodyFromPosts < ActiveRecord::Migration[6.0]
   def up
     remove_column :posts, :body
@@ -7,3 +10,4 @@ class RemoveBodyFromPosts < ActiveRecord::Migration[6.0]
     add_column :posts, :body
   end
 end
+# rubocop:enable Style/Documentation
