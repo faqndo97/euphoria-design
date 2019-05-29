@@ -1,9 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  body: MyString
+  title: 'My post example'
 
 two:
-  title: MyString
-  body: MyString
+  title: 'My second post example'
