@@ -5,6 +5,7 @@ require 'administrate/base_dashboard'
 class PostDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
+    cover: Field::ActiveStorage.with_options({ show_preview_size:  '150x200>', url_only: true }),
     title: Field::String,
     body: RichTextAreaField,
     state: Field::Select.with_options(
@@ -28,6 +29,7 @@ class PostDashboard < Administrate::BaseDashboard
 
   SHOW_PAGE_ATTRIBUTES = %i[
     id
+    cover
     title
     state
     body
@@ -38,6 +40,7 @@ class PostDashboard < Administrate::BaseDashboard
 
   FORM_ATTRIBUTES = %i[
     title
+    cover
     state
     body
     categories
