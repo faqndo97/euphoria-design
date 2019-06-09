@@ -6,5 +6,6 @@ class Post < ApplicationRecord
 
   enum state: %i[draft published]
 
-  validates :title, :description, presence: true
+  validates :title, :description, :state, presence: true
+  validates :description, length: { maximum: 280 }
 end
