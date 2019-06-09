@@ -1,11 +1,13 @@
 <% @posts.each do |post| %>
-  <section class="flex flex-col items-center mt-12">
+  <section class="flex flex-col mt-12">
+    <%= link_to post_path(post), class: 'flex justify-center' do %>
       <article class="flex flex-col lg:flex-row xl:flex-row w-10/12 md:w-8/12 sm:w-8/12 mb-4">
-          <%= image_tag post.cover, class: 'w-full lg:w-64 xl:w-64 object-cover'%>
+        <%= image_tag post.cover, class: 'w-full lg:w-64 xl:w-64 object-cover'%>
           <section class="px-5 py-10 border border-t-0 lg:border-t lg:border-l-0 xl:border-t lxl:border-l-0 border-solid border-grey-400">
               <h3 class="text-lg font-medium"><%= post.title %></h3>
               <h4 class="mt-6"><%= post.description %></h4>
           </section>
       </article>
+    <% end %>
   </section>
 <% end %>
