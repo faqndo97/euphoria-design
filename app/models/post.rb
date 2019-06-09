@@ -6,5 +6,5 @@ class Post < ApplicationRecord
 
   enum state: %i[draft published]
 
-  validates :title, presence: true
+  validates :title, :description, presence: true
 end
