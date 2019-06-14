@@ -1,0 +1,82 @@
+.post-card {
+  @apply flex;
+  @apply flex-col;
+  @apply mt-12;
+}
+
+.post-link-container {
+  @apply flex;
+  @apply justify-center;
+}
+
+.post-container {
+  @apply flex;
+  @apply flex-col;
+  @apply w-10/12;
+  @apply mb-4;
+}
+
+.post-cover {
+  @apply w-full;
+  @apply object-cover;
+}
+
+.post-body {
+  @apply px-5;
+  @apply py-10;
+  @apply border;
+  @apply border-t-0;
+  @apply border-solid;
+  @apply border-gray-400;
+}
+
+.post-body-title {
+  @apply text-lg;
+  @apply font-medium;
+}
+
+.post-body-description {
+  @apply mt-6;
+}
+
+@screen sm {
+  .post-container {
+    @apply w-8/12;
+  }
+}
+
+@screen md {
+  .post-container {
+    @apply w-8/12;
+  }
+}
+
+@screen lg {
+  .post-container {
+    @apply flex-row;
+  }
+
+  .post-cover {
+    @apply w-64;
+  }
+
+  .post-body {
+    @apply border-t;
+    @apply border-l-0;
+  }
+}
+
+@screen xl {
+  .post-container {
+    @apply flex-row;
+  }
+
+  .post-cover {
+    @apply w-64;
+  }
+
+  .post-body {
+    @apply border-t;
+    @apply border-l-0;
+  }
+}
