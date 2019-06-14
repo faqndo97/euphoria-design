@@ -1,82 +1,92 @@
-.post-card {
+.post-list {
   @apply flex;
   @apply flex-col;
   @apply mt-12;
+  @apply items-center;
 }
 
 .post-link-container {
   @apply flex;
-  @apply justify-center;
 }
 
-.post-container {
+.post-card {
   @apply flex;
   @apply flex-col;
   @apply w-10/12;
   @apply mb-4;
 }
 
-.post-cover {
+.post-card-cover {
   @apply w-full;
   @apply object-cover;
+  @apply rounded-t-lg;
 }
 
-.post-body {
+.post-card-body {
   @apply px-5;
   @apply py-10;
   @apply border;
   @apply border-t-0;
   @apply border-solid;
   @apply border-gray-400;
+  @apply rounded-b-lg;
 }
 
-.post-body-title {
+.post-card-body-title {
   @apply text-lg;
   @apply font-medium;
 }
 
-.post-body-description {
+.post-card-body-description {
   @apply mt-6;
 }
 
 @screen sm {
-  .post-container {
+  .post-card {
     @apply w-8/12;
   }
 }
 
 @screen md {
-  .post-container {
+  .post-card {
     @apply w-8/12;
   }
 }
 
 @screen lg {
-  .post-container {
+  .post-card {
     @apply flex-row;
   }
 
-  .post-cover {
+  .post-card-cover {
     @apply w-64;
+    @apply rounded-t-none;
+    @apply rounded-l-lg;
   }
 
-  .post-body {
+  .post-card-body {
     @apply border-t;
     @apply border-l-0;
+    @apply rounded-b-none;
+    @apply rounded-r-lg;
   }
 }
 
 @screen xl {
-  .post-container {
+  .post-card {
     @apply flex-row;
   }
 
-  .post-cover {
+  .post-card-cover {
     @apply w-64;
+    @apply rounded-t-none;
+    @apply rounded-l-lg;
   }
 
-  .post-body {
+  .post-card-body {
     @apply border-t;
     @apply border-l-0;
+    @apply rounded-b-none;
+    @apply rounded-r-lg;
   }
 }

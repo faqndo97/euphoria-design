@@ -1,13 +1,13 @@
-<% @posts.each do |post| %>
-  <section class="post-card">
-    <%= link_to post_path(post), class: "post-link-container" do %>
-      <article class="post-container">
-        <%= image_tag post.cover, class: "post-cover" %>
-        <section class="post-body">
-          <h3 class="post-body-title"><%= post.title %></h3>
-          <h4 class="post-body-description"><%= post.description %></h4>
+<section class="post-list">
+  <% @posts.each do |post| %>
+      <%# <%= link_to post_path(post), class: "post-link-container" do %>
+      <article class="post-card">
+        <%= image_tag post.cover, class: "post-card-cover" %>
+        <section class="post-card-body">
+          <h3 class="post-card-body-title"><%= post.title %></h3>
+          <h4 class="post-card-body-description"><%= post.description %></h4>
         </section>
       </article>
-    <% end %>
-  </section>
-<% end %>
+      <%# <% end %>
+  <% end %>
+</section>
