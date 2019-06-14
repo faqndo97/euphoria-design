@@ -100,6 +100,8 @@ GEM
     erubi (1.8.0)
     eventmachine (1.2.5)
     execjs (2.7.0)
+    faraday (0.15.4)
+      multipart-post (>= 1.2, < 3)
     ffi (1.11.1)
     formatador (0.2.5)
     globalid (0.4.2)
@@ -163,6 +165,7 @@ GEM
       railties (>= 3.1)
     msgpack (1.2.10)
     multi_json (1.13.1)
+    multipart-post (2.1.1)
     nenv (0.3.0)
     nio4r (2.3.1)
     nokogiri (1.10.3)
@@ -238,6 +241,8 @@ GEM
     selenium-webdriver (3.142.3)
       childprocess (>= 0.5, < 2.0)
       rubyzip (~> 1.2, >= 1.2.2)
+    sentry-raven (2.9.0)
+      faraday (>= 0.7.6, < 1.0)
     shellany (0.0.1)
     shoulda (3.5.0)
       shoulda-context (~> 1.0, >= 1.0.1)
@@ -305,6 +310,7 @@ DEPENDENCIES
   rails (~> 6.0.0.rc1)
   sass-rails (~> 5)
   selenium-webdriver
+  sentry-raven
   shoulda (~> 3.5)
   shoulda-matchers (~> 2.0)
   spring

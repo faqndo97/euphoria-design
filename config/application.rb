@@ -8,12 +8,10 @@ Bundler.require(*Rails.groups)
 
 module EuphoriaDesign
   class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration can go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded after loading
-    # the framework and any gems in your application.
+    Raven.configure do |config|
+      config.dsn = 'https://0359ceb97afc4d8597ba91893b9b87e0:7792f93487534f48b37b2df632ba545a@sentry.io/1465974'
+    end
   end
 end
