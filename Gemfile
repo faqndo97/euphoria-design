@@ -18,6 +18,7 @@ gem 'webpacker', '~> 4.0'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'guard-livereload', '~> 2.5', require: false
   gem 'pry-byebug'
   gem 'pry-rails'
 end
