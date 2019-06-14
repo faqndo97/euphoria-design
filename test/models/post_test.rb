@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class PostTest < ActiveSupport::TestCase
@@ -10,6 +12,7 @@ class PostTest < ActiveSupport::TestCase
   should validate_presence_of(:description)
   should validate_presence_of(:state)
   should validate_length_of(:description).is_at_most(280)
+  should validate_length_of(:title).is_at_most(140)
 
   # TEST MODEL ENUMS
   should define_enum_for(:state).with(%i[draft published])
