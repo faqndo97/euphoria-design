@@ -2,7 +2,7 @@
   <% @posts.each do |post| %>
       <%# <%= link_to post_path(post), class: "post-link-container" do %>
       <article class="post-card">
-        <%= image_tag post.cover, class: "post-card-cover" %>
+        <%= image_tag url_for(post.cover), class: "post-card-cover" %>
         <section class="post-card-body">
           <h3 class="post-card-body-title"><%= post.title %></h3>
           <h4 class="post-card-body-description"><%= post.description %></h4>
