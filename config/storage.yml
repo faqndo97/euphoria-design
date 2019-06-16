@@ -6,8 +6,14 @@ local:
   service: Disk
   root: <%= Rails.root.join("storage") %>
 
-cloudinary:
-  service: Cloudinary
-  cloud_name: 'hdp78cyfh'
-  api_key:    '692689756192492'
-  api_secret: 'fSicBvsfSXqTkap8VSVGoFdXXuw'
+google:
+  service: GCS
+  project: euphoria-design
+  credentials: <%= ENV['GOOGLE_APPLICATION_CREDENTIALS'] %>
+  bucket: euphoria-design-photos
+
+google_dev:
+  service: GCS
+  project: euphoria-design
+  credentials: <%= Rails.root.join("config/secrets/euphoria-design.json") %>
+  bucket: euphoria-design-photos-dev
