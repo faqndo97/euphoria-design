@@ -6,11 +6,11 @@
 # you're free to overwrite the RESTful controller actions.
 module Admin
   class ApplicationController < Administrate::ApplicationController
-    # before_action :authenticate_admin
+    before_action :authenticate_admin
 
     def authenticate_admin
       unless Rails.env.development?
-        redirect_to new_admin_user_session_url unless admin_user_signed_in?
+        authenticate_admin_user!
       end
     end
 
