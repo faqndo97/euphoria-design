@@ -10,7 +10,7 @@ module Admin
 
     def authenticate_admin
       unless Rails.env.development?
-        head(404)
+        redirect_to new_admin_user_session_url unless admin_user_signed_in?
       end
     end
 
