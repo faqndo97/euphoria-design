@@ -10,7 +10,7 @@ module Admin
 
     def authenticate_admin
       unless Rails.env.development?
-        authenticate_admin_user!
+        authenticate_admin_admin_user!
       end
     end
 
