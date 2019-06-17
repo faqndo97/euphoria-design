@@ -8,7 +8,7 @@
           <h4 class="post-card-body-description"><%= post.description %></h4>
           <div class="flex mt-4">
             <% post.categories.each do |category| %>
-              <h4 class="px-4 py-1 bg-teal-500 rounded mr-3 text-white capitalize"><%= category.name %></h4>
+              <h4 class="tag"><%= category.name %></h4>
             <% end %>
           </div>
         </section>

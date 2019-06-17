@@ -41,6 +41,16 @@
   @apply mt-6;
 }
 
+.tag {
+  @apply px-4;
+  @apply py-1;
+  @apply bg-teal-500;
+  @apply rounded;
+  @apply mr-3;
+  @apply text-white;
+  @apply capitalize;
+}
+
 @screen sm {
   .post-card {
     @apply w-8/12;
