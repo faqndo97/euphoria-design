@@ -17,8 +17,12 @@ class PostDashboard < Administrate::BaseDashboard
       limit: 5,
       direction: :desc
     ),
-    created_at: Field::DateTime,
-    updated_at: Field::DateTime
+    created_at: Field::DateTime.with_options(
+      format: '%H:%M %b %d, %Y'
+    ),
+    updated_at: Field::DateTime.with_options(
+      format: '%H:%M %b %d, %Y'
+    )
   }.freeze
 
   COLLECTION_ATTRIBUTES = %i[
