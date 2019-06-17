@@ -12,9 +12,6 @@ class AdminUserDashboard < Administrate::BaseDashboard
     email: Field::String,
     name: Field::String,
     password: Field::Password,
-    sign_in_count: Field::Number.with_options(searchable: false),
-    current_sign_in_at: Field::DateTime.with_options(searchable: false),
-    last_sign_in_at: Field::DateTime.with_options(searchable: false),
     created_at: Field::DateTime.with_options(
       format: '%H:%M %b %d, %Y'
     ),
@@ -42,9 +39,6 @@ class AdminUserDashboard < Administrate::BaseDashboard
     :id,
     :name,
     :email,
-    :sign_in_count,
-    :current_sign_in_at,
-    :last_sign_in_at,
     :created_at,
     :updated_at
   ].freeze
