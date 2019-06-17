@@ -15,6 +15,7 @@ gem 'puma', '~> 3.11'
 gem 'pundit', '~> 1.1.0'
 gem 'rails', '~> 6.0.0.rc1'
 gem 'sass-rails', '~> 5'
+gem 'scout_apm'
 gem 'sentry-raven'
 gem 'turbolinks', '~> 5'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
