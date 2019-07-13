@@ -1,0 +1,12 @@
+<article class="post-card">
+  <%= image_tag post.cover.blob, class: "post-card-cover" %>
+  <section class="post-card-body">
+    <h3 class="post-card-body-title capitalize"><%= post.title %></h3>
+    <h4 class="post-card-body-description"><%= post.description %></h4>
+    <div class="flex mt-4">
+      <% post.categories.each do |category| %>
+        <h4 class="tag"><%= category.name %></h4>
+      <% end %>
+    </div>
+  </section>
+</article>
