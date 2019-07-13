@@ -1,0 +1,7 @@
+<section class="post-list">
+  <% @posts.each do |post| %>
+      <%# <%= link_to post_path(post), class: "post-link-container" do %>
+      <%= render 'posts/post', post: post %>
+      <%# <% end %>
+  <% end %>
+</section>
