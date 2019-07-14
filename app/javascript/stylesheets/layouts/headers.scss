@@ -1,0 +1,14 @@
+.home-header {
+  @apply bg-cover;
+  @apply bg-bottom;
+  @apply flex;
+  @apply justify-center;
+  @apply p-10;
+  height: 50vh;
+  background-image: url(https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80);
+}
+
+.home-header h1 {
+  @apply text-xl;
+  font-family: 'Syncopate', sans-serif;
+}

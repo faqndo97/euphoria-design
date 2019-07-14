@@ -1,7 +1,12 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 
 // CUSTOM MODULES
+@import "layouts/headers";
 @import "post";
 @import "sign_in";
 

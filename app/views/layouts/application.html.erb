@@ -6,15 +6,18 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700|Syncopate&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <header class="flex justify-center">
-      <%= image_tag asset_path("logo.png"), class: 'w-64 h-64' %>
-    </header>
+    <% if controller.class == HomeController %>
+      <%= render 'layouts/home_header' %>
+    <% elsif controller.class ==  PostsController %>
+      <%= render 'layouts/blog_header' %>
+    <%end%>
     <%= yield %>
   </body>
 </html>
