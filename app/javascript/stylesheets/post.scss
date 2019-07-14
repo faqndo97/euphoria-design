@@ -19,7 +19,6 @@
 .post-card-cover {
   @apply w-full;
   @apply object-cover;
-  @apply rounded-t-lg;
 }
 
 .post-card-body {
@@ -29,7 +28,6 @@
   @apply border-t-0;
   @apply border-solid;
   @apply border-gray-400;
-  @apply rounded-b-lg;
 }
 
 .post-card-body-title {
@@ -39,16 +37,6 @@
 
 .post-card-body-description {
   @apply mt-6;
-}
-
-.tag {
-  @apply px-4;
-  @apply py-1;
-  @apply bg-teal-500;
-  @apply rounded;
-  @apply mr-3;
-  @apply text-white;
-  @apply capitalize;
 }
 
 @screen sm {
@@ -70,15 +58,11 @@
 
   .post-card-cover {
     @apply w-64;
-    @apply rounded-t-none;
-    @apply rounded-l-lg;
   }
 
   .post-card-body {
     @apply border-t;
     @apply border-l-0;
-    @apply rounded-b-none;
-    @apply rounded-r-lg;
   }
 }
 
@@ -89,14 +73,10 @@
 
   .post-card-cover {
     @apply w-64;
-    @apply rounded-t-none;
-    @apply rounded-l-lg;
   }
 
   .post-card-body {
     @apply border-t;
     @apply border-l-0;
-    @apply rounded-b-none;
-    @apply rounded-r-lg;
   }
 }
