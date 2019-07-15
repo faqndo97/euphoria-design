@@ -39,6 +39,15 @@
   @apply mt-6;
 }
 
+.see-all {
+  @apply bg-gray-900;
+  @apply text-gray-200;
+  @apply mt-16;
+  @apply py-4;
+  @apply w-8/12;
+  @apply text-center;
+}
+
 @screen sm {
   .post-card {
     @apply w-8/12;
@@ -52,6 +61,10 @@
 }
 
 @screen lg {
+  .see-all {
+    @apply w-1/3;
+  }
+
   .post-card {
     @apply flex-row;
   }

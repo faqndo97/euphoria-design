@@ -8,6 +8,7 @@ gem 'administrate'
 gem 'administrate-field-active_storage'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
+gem 'font-awesome-rails'
 gem 'google-cloud-storage'
 gem 'image_processing', '~> 1.2'
 gem 'pg', '>= 0.18', '< 2.0'

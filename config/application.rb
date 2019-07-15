@@ -15,5 +15,10 @@ module EuphoriaDesign
     end
 
     config.serve_static_assets = true
+
+    config.social_networks_urls = {
+      facebook: 'https://www.facebook.com/euphoriadesignuy/',
+      instagram: 'https://www.instagram.com/euphoriasdesign/',
+    }
   end
 end

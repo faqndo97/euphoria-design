@@ -19,5 +19,33 @@
       <%= render 'layouts/blog_header' %>
     <%end%>
     <%= yield %>
+    <footer class="footer">
+      <div class="footer-title">
+        <h2>EUPHORIA DESIGN</h2>
+      </div>
+      <div class="footer-main">
+        <div class="footer-section footer-section-border">
+          <ul class="footer-social-networks">
+            <li class="mr-16">
+              <%= link_to Rails.application.config.social_networks_urls[:facebook] do %>
+                <%= fa_icon "facebook" %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to Rails.application.config.social_networks_urls[:instagram] do %>
+                <%= fa_icon "instagram" %>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section footer-section-border flex-col">
+          <input type="text" name="email" placeholder="Email" class="bg-gray-900 border border-gray-200 py-2 px-4 block w-full appearance-none leading-normal mb-4">
+          <input type="submit" value="Subscribirse ahora" class="bg-gray-900 border border-gray-200 py-2 px-4 block w-full appearance-none leading-normal">
+        </div>
+        <div class="footer-section">
+          <p><span><%= fa_icon "copyright" %></span> 2019 Euphoria Design by Nati Silveira</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
