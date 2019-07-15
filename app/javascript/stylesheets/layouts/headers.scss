@@ -9,6 +9,7 @@
 }
 
 .home-header h1 {
+  @apply tracking-widest;
   @apply text-xl;
   font-family: 'Syncopate', sans-serif;
 }
