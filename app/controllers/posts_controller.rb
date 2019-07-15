@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class PostsController < ApplicationController
+  caches_page :index
+
   def index
     @posts = Post.with_attached_cover.published
   end

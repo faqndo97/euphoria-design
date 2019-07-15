@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+gem 'actionpack-page_caching'
 gem 'activestorage-cloudinary-service'
 gem 'administrate'
 gem 'administrate-field-active_storage'

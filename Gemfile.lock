@@ -25,6 +25,8 @@ GEM
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    actionpack-page_caching (1.1.1)
+      actionpack (>= 4.0.0, < 6)
     actiontext (6.0.0.rc1)
       actionpack (= 6.0.0.rc1)
       activerecord (= 6.0.0.rc1)
@@ -358,6 +360,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionpack-page_caching
   activestorage-cloudinary-service
   administrate
   administrate-field-active_storage
