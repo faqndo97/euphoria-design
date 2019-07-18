@@ -1,0 +1,15 @@
+nav {
+  @apply bg-gray-900;
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+}
+
+nav ul {
+  @apply flex;
+  @apply justify-around;
+  @apply items-center;
+  @apply w-1/2;
+  @apply h-10;
+  @apply text-gray-200;
+}
