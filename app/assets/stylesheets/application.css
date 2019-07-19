@@ -13,3 +13,4 @@
  *= require font-awesome
  *= require_self
  */
+@import "toastify-js/src/toastify";

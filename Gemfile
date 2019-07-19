@@ -21,6 +21,7 @@ gem 'scout_apm'
 gem 'sentry-raven'
 gem 'turbolinks', '~> 5'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem "valid_email2"
 gem 'webpacker', '~> 4.0'
 
 group :development, :test do

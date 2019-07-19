@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  post 'newsletter/subscribe'
   root to: 'home#index'
 
   resources :posts, only: %i[index show]
@@ -15,5 +16,6 @@ Rails.application.routes.draw do
     resources :posts
     resources :categories
     resources :admin_users
+    resources :newsletters
   end
 end

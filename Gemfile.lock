@@ -334,6 +334,9 @@ GEM
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uber (0.1.0)
+    valid_email2 (3.0.3)
+      activemodel (>= 3.2)
+      mail (~> 2.5)
     warden (1.2.8)
       rack (>= 2.0.6)
     web-console (4.0.0)
@@ -389,6 +392,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
   tzinfo-data
+  valid_email2
   web-console (>= 3.3.0)
   webdrivers
   webpacker (~> 4.0)
