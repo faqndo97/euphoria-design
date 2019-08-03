@@ -1,5 +1,6 @@
 import { Controller } from "stimulus"
 import Toastify from "toastify-js"
+import "toastify-js/src/toastify.css";
 
 export default class extends Controller {
   static targets = [ "email" ];
