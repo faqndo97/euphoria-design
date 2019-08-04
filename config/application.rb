@@ -11,6 +11,8 @@ module EuphoriaDesign
     config.load_defaults 6.0
 
     Raven.configure do |config|
+      config.environments = %w[ production ]
+      config.silence_ready = true
       config.dsn = 'https://0359ceb97afc4d8597ba91893b9b87e0:7792f93487534f48b37b2df632ba545a@sentry.io/1465974'
     end
 

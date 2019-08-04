@@ -1,0 +1,11 @@
+.category-list {
+  @apply flex;
+  @apply w-10/12;
+  @apply ml-auto pt-12;
+}
+
+.category {
+  @apply inline;
+  @apply capitalize;
+  @apply mr-5;
+}

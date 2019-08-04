@@ -12,20 +12,20 @@ class Post < ApplicationRecord
   validates :description, length: { maximum: 280 }
   validates :title, length: { maximum: 140 }
 
-  before_create :expire_caches_on_create
-  after_update :expire_caches_on_update
+  before_create :expire_caches_on_create, if: proc { Rails.env == 'production' }
+  after_update :expire_caches_on_update, if: proc { Rails.env == 'production' }
 
   private
 
   def expire_caches_on_create
-    CacheService.expire
+    CacheService.expire_all
 
     Rails.cache.delete('last_5_posts_ids')
   end
 
   def expire_caches_on_update
-    if last_5_ids.includes? id
-      CacheService.expire
+    if last_5_ids.include? id
+      CacheService.expire_all
     else
       CacheService.expire(cache_module: :posts)
     end

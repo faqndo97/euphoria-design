@@ -1,3 +1,8 @@
+<section class="category-list">
+  <% @categories.each do |category| %>
+    <%= render 'category', category: category %>
+  <% end %>
+</section>
 <section class="post-list">
   <% @posts.each do |post| %>
       <%# <%= link_to post_path(post), class: "post-link-container" do %>
