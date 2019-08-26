@@ -1,0 +1,38 @@
+.main-about {
+  @apply flex;
+  @apply justify-center;
+  @apply text-center;
+  @apply my-20;
+}
+
+.main-about > div {
+  @apply flex;
+  @apply flex-col;
+  @apply w-8/12;
+  @apply items-center;
+  @apply justify-around;
+}
+
+.about-text {
+  @apply w-6/12;
+}
+
+.about-text > h1 {
+  @apply text-2xl;
+  @apply mb-12;
+}
+
+.about-text > p {
+  @apply mb-12;
+}
+
+@screen md {
+  .main-about {
+    @apply my-40;
+    @apply text-left;
+  }
+
+  .main-about > div {
+    @apply flex-row;
+  }
+}

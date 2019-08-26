@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   resources :posts, only: %i[index show]
 
+  resources :about, only: %i[index]
   namespace :admin do
     devise_for :admin_users, path: 'auth', controllers: {
       sessions: 'admin_users/sessions'
