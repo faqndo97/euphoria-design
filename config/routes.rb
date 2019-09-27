@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   resources :posts, only: %i[index show]
 
   resources :about, only: %i[index]
+
+  get 'contact', to: 'contact#index', as: 'contact'
+  post 'contact', to: 'contact#create', as: 'contact_create'
+
   namespace :admin do
     devise_for :admin_users, path: 'auth', controllers: {
       sessions: 'admin_users/sessions'
@@ -18,5 +22,6 @@ Rails.application.routes.draw do
     resources :categories
     resources :admin_users
     resources :newsletters
+    resources :contacts
   end
 end
