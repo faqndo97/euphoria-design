@@ -22,13 +22,15 @@ class PostDashboard < Administrate::BaseDashboard
     ),
     updated_at: Field::DateTime.with_options(
       format: '%H:%M %b %d, %Y'
-    )
+    ),
+    count_of_views: Field::Number
   }.freeze
 
   COLLECTION_ATTRIBUTES = %i[
     id
     title
     state
+    count_of_views
     created_at
   ].freeze
 
@@ -36,6 +38,7 @@ class PostDashboard < Administrate::BaseDashboard
     cover
     title
     state
+    count_of_views
     description
     body
     categories

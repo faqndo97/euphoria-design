@@ -11,6 +11,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.published.find(params[:id])
+    @post.update(count_of_views: @post.count_of_views + 1)
   rescue ActiveRecord::RecordNotFound
     redirect_to posts_url
   end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_26_120449) do
+ActiveRecord::Schema.define(version: 2019_09_27_020047) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -94,6 +94,7 @@ ActiveRecord::Schema.define(version: 2019_08_26_120449) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "state", default: 0, null: false
     t.text "description", null: false
+    t.integer "count_of_views", default: 0, null: false
     t.index ["state"], name: "index_posts_on_state"
     t.index ["title"], name: "index_posts_on_title"
   end
