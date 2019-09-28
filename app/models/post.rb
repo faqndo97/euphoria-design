@@ -12,8 +12,8 @@ class Post < ApplicationRecord
   validates :description, length: { maximum: 280 }
   validates :title, length: { maximum: 140 }
 
-  before_create :expire_caches_on_create, if: proc { Rails.env == 'production' }
-  after_update :expire_caches_on_update, if: proc { Rails.env == 'production' }
+  # before_create :expire_caches_on_create, if: proc { Rails.env == 'production' }
+  # after_update :expire_caches_on_update, if: proc { Rails.env == 'production' }
 
   private
 
