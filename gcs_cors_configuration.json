@@ -1,6 +1,6 @@
 [
   {
-    "origin": ["http://localhost:3000"],
+    "origin": ["http://localhost:3000", "https://euphoria-design.herokuapp.com/"],
     "responseHeader": ["Content-Type", "Content-Md5"],
     "method": ["PUT", "GET", "HEAD", "DELETE", "OPTIONS", "POST"],
     "maxAgeSeconds": 3600
