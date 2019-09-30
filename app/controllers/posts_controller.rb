@@ -1,6 +1,4 @@
 class PostsController < ApplicationController
-  caches_page :index
-
   def index
     @categories = Category.all
     category_filter = { name: params[:category] }
