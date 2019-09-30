@@ -20,3 +20,7 @@ require("stylesheets/application.scss")
 require("trix")
 require("@rails/actiontext")
 import "controllers"
+
+document.addEventListener('turbolinks:load', function() {
+  gtag('config', 'UA-149113590-1')
+});
