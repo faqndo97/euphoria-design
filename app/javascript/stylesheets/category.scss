@@ -1,11 +1,25 @@
-.category-list {
+.category-list-post-index {
   @apply flex;
   @apply w-10/12;
-  @apply ml-auto pt-12;
+  @apply ml-auto;
+  @apply pt-12;
+}
+
+.category-list-post-show {
+  @apply flex;
+  @apply w-11/12;
+  @apply ml-auto;
+  @apply pt-12;
 }
 
 .category {
   @apply inline;
   @apply capitalize;
   @apply mr-5;
+}
+
+@screen lg {
+  .category-list-post-show {
+    @apply w-9/12;
+  }
 }
