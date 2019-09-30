@@ -34,5 +34,6 @@
 
   .main-about > div {
     @apply flex-row;
+    @apply items-start;
   }
 }
