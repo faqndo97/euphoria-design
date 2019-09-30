@@ -9,7 +9,13 @@ nav ul {
   @apply flex;
   @apply justify-around;
   @apply items-center;
-  @apply w-1/2;
+  @apply w-11/12;
   @apply h-10;
   @apply text-gray-200;
+}
+
+@screen md {
+  nav ul {
+    @apply w-1/2;
+  }
 }

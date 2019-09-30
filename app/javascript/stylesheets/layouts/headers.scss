@@ -1,19 +1,25 @@
 .home-header {
-  @apply bg-cover;
-  @apply bg-bottom;
   @apply flex;
   @apply justify-center;
-  @apply p-10;
-  height: 50vh;
-  background-image: url(https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80);
+  @apply mt-8;
 }
 
-.header-title {
-  @apply tracking-widest;
-  @apply text-xl;
-  font-family: 'Syncopate', sans-serif;
+.blog-header {
+  @apply home-header;
 }
 
-.home-header h1 {
-  @apply header-title;
+.blog-header img {
+  @apply h-32;
+  @apply p-4;
+}
+
+.home-header img {
+  @apply h-32;
+  @apply p-4;
+}
+
+@screen lg {
+  .home-header img {
+    @apply h-56;
+  }
 }

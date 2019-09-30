@@ -1,0 +1,14 @@
+html {
+height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#apiary-browser-extension {
+  display: none;
+}

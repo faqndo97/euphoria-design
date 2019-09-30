@@ -1,8 +1,9 @@
 .category-list-post-index {
   @apply flex;
   @apply w-10/12;
-  @apply ml-auto;
+  @apply ml-10;
   @apply pt-12;
+  @apply flex-wrap;
 }
 
 .category-list-post-show {
@@ -21,5 +22,9 @@
 @screen lg {
   .category-list-post-show {
     @apply w-9/12;
+  }
+
+  .category-list-post-index {
+    @apply ml-auto;
   }
 }
