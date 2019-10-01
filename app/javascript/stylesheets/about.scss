@@ -14,7 +14,7 @@
 }
 
 .about-text {
-  @apply w-6/12;
+  @apply w-10/12;
 }
 
 .about-text > h1 {
@@ -35,5 +35,9 @@
   .main-about > div {
     @apply flex-row;
     @apply items-start;
+  }
+
+  .about-text {
+    @apply w-6/12;
   }
 }
