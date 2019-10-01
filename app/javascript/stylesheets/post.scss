@@ -99,6 +99,8 @@
 }
 .post-body > .trix-content figcaption {
   @apply text-center;
+  @apply mt-8;
+  @apply text-sm;
 }
 
 .post-body > .trix-content h1 {
