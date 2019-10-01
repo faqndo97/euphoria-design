@@ -70,6 +70,7 @@
   @apply text-3xl;
   @apply mb-8;
   @apply font-medium;
+  @apply text-center;
 }
 
 .post-body > .trix-content a {
@@ -93,6 +94,9 @@
   @apply list-inside;
 }
 
+.post-body > .trix-content figure > img {
+  margin: auto;
+}
 .post-body > .trix-content figcaption {
   @apply text-center;
 }
